@@ -22,3 +22,31 @@ Callbacks are easily handled by using Closures.
 ![Simulator Screen Shot - iPhone X - 2019-05-22 at 16 29 13](https://user-images.githubusercontent.com/16478904/58169843-68bf4f80-7caf-11e9-9fb3-c0fe9f1c6b47.png)
 
 ![Simulator Screen Shot - iPhone X - 2019-05-22 at 16 24 53](https://user-images.githubusercontent.com/16478904/58169844-6957e600-7caf-11e9-8f1b-17b8fe3621fa.png)
+
+
+# Usage -  It's simpler than anything:
+
+
+
+# For Simple one: 
+
+            self.showCustomAlertWith(
+                message: "This is a simple alert with a logo and message",
+                descMsg: "",
+                itemimage: nil,
+                actions: nil)
+
+# For More Content: 
+
+
+            let actionDic : [String: () -> Void] = [ "YES" : { (
+                    print("tapped YES")
+                ) }, "NO" : { (
+                    print("tapped NO")
+                ) }]
+            
+            self.showCustomAlertWith(
+                message: "This is an alert with a logo, message, additional icon, description, and 2 buttons with handlers",
+                descMsg: "your description goes here. Change font size from XiB file.",
+                itemimage: #imageLiteral(resourceName: "icon"),
+                actions: actionDic)
