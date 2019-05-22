@@ -1,5 +1,7 @@
 # KCustomAlert
 
+GitHub pages URl here: https://krishnads.github.io/KCustomAlert/.
+
 
 # Simple and easy alerts to use instead of default AlertController.
 
