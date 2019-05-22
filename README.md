@@ -3,6 +3,9 @@
 GitHub pages URl here: https://krishnads.github.io/KCustomAlert/.
 
 
+Let’s not use the default AlertController in our upcoming iOS Apps because it doesn’t feel awesome. To make the alert look better and customised, I just created Common Repo which can be used very easily for all kind of Alerts. So, let’s use this from now on.
+
+
 # Simple and easy alerts to use instead of default AlertController.
 
 # Separate Xib is provided to customize as pr your need. 
