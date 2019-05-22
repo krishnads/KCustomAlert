@@ -26,7 +26,7 @@ Callbacks are easily handled by using Closures.
 
 # Usage -  It's simpler than anything:
 
-
+# Simply Drag and drop CustomAlert folder in your project. that's it...
 
 # For Simple one: 
 
