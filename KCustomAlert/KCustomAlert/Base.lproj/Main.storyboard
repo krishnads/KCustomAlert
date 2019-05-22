@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KCustomAlert" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="xiS-VR-rYv">
+                                <rect key="frame" x="10" y="198.5" width="355" height="270"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZ6-6O-T9L">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="30"/>
+                                        <state key="normal" title="Alert with message"/>
+                                        <connections>
+                                            <action selector="alertButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Svj-eF-kX2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e8b-2O-tky">
+                                        <rect key="frame" x="0.0" y="80" width="355" height="30"/>
+                                        <state key="normal" title="Alert with message &amp; description"/>
+                                        <connections>
+                                            <action selector="alertButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dpt-TK-cUK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="G5H-Xi-sdg">
+                                        <rect key="frame" x="0.0" y="160" width="355" height="30"/>
+                                        <state key="normal" title="Alert with message, description and additional image icon"/>
+                                        <connections>
+                                            <action selector="alertButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oz5-mc-Ari"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HIe-eD-VCY">
+                                        <rect key="frame" x="0.0" y="240" width="355" height="30"/>
+                                        <state key="normal" title="Alert with message, 2 buttons, and desc"/>
+                                        <connections>
+                                            <action selector="alertButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UlR-cf-f1G"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All alerts will be shown with a logo image." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9mz-Ga-xgx">
+                                <rect key="frame" x="20" y="70" width="335" height="53"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xiS-VR-rYv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="er9-s7-Dfd"/>
+                            <constraint firstItem="xiS-VR-rYv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="h99-7A-OJx"/>
+                            <constraint firstAttribute="trailing" secondItem="9mz-Ga-xgx" secondAttribute="trailing" constant="20" id="m7e-oh-Y2V"/>
+                            <constraint firstItem="9mz-Ga-xgx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="oJG-fj-2XR"/>
+                            <constraint firstItem="9mz-Ga-xgx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="tF3-An-Y5h"/>
+                            <constraint firstAttribute="trailing" secondItem="xiS-VR-rYv" secondAttribute="trailing" constant="10" id="vu1-RZ-44q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CommonAlertVC" customModule="KCustomAlert" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonCancel" destination="uch-SE-dhb" id="a7C-Bw-9a9"/>
+                <outlet property="buttonOkay" destination="rl1-yx-ELo" id="I9B-uf-pyh"/>
+                <outlet property="heightViewContainer" destination="MAd-iG-DIg" id="SNu-is-wbw"/>
+                <outlet property="imageViewItem" destination="G2I-sn-5Yu" id="TCu-ca-bKm"/>
+                <outlet property="labelDescription" destination="Yuz-DG-t3J" id="6mM-kx-HEF"/>
+                <outlet property="labelMessage" destination="KKU-ES-83k" id="pcX-u7-nDQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewContainer" destination="Rkx-vf-edJ" id="E3K-fA-shv"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rkx-vf-edJ">
+                    <rect key="frame" x="25" y="193.5" width="325" height="280"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ya5-8Q-nu2">
+                            <rect key="frame" x="10" y="20" width="305" height="240"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="dD9-iw-wME">
+                                    <rect key="frame" x="102.5" y="0.0" width="100" height="76"/>
+                                </imageView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="02m-0O-8ix">
+                                    <rect key="frame" x="20.5" y="91" width="264" height="84"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sending your reminder list request to" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KKU-ES-83k">
+                                            <rect key="frame" x="0.0" y="0.0" width="264" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="60" id="puX-nf-Ena"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                                            <color key="textColor" cyan="0.65000000000000002" magenta="0.55216151475906372" yellow="0.51200008392333984" black="0.064082831144332886" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="G2I-sn-5Yu">
+                                            <rect key="frame" x="108" y="65" width="48" height="14"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sending your reminder list request to" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yuz-DG-t3J">
+                                            <rect key="frame" x="8.5" y="84" width="247.5" height="0.0"/>
+                                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="15"/>
+                                            <color key="textColor" cyan="0.65000000000000002" magenta="0.55216151475906372" yellow="0.51200008392333984" black="0.064082831144332886" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Rwl-yY-uQD">
+                                    <rect key="frame" x="15" y="190" width="275" height="50"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rl1-yx-ELo">
+                                            <rect key="frame" x="0.0" y="0.0" width="125" height="50"/>
+                                            <color key="backgroundColor" red="0.035294117649999998" green="0.2274509804" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="125" id="J4S-1e-uiZ"/>
+                                                <constraint firstAttribute="height" constant="50" id="rTM-tU-5at"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                                            <state key="normal" title="OK">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="okayButtonActionWithSender:" destination="-1" eventType="touchUpInside" id="Hj9-Kf-l8M"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uch-SE-dhb">
+                                            <rect key="frame" x="150" y="0.0" width="125" height="50"/>
+                                            <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
+                                            <state key="normal" title="CANCEL">
+                                                <color key="titleColor" red="0.035294117647058823" green="0.22745098039215686" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="cancelButtonActionWithSender:" destination="-1" eventType="touchUpInside" id="I9D-Dq-mNe"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="uch-SE-dhb" firstAttribute="width" secondItem="rl1-yx-ELo" secondAttribute="width" id="dFg-62-e9U"/>
+                                        <constraint firstItem="uch-SE-dhb" firstAttribute="height" secondItem="rl1-yx-ELo" secondAttribute="height" id="dpB-UE-kC9"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="ya5-8Q-nu2" firstAttribute="top" secondItem="Rkx-vf-edJ" secondAttribute="top" constant="20" id="3yq-HQ-T4w"/>
+                        <constraint firstAttribute="height" constant="280" id="MAd-iG-DIg"/>
+                        <constraint firstItem="ya5-8Q-nu2" firstAttribute="leading" secondItem="Rkx-vf-edJ" secondAttribute="leading" constant="10" id="aFc-HG-JE1"/>
+                        <constraint firstAttribute="bottom" secondItem="ya5-8Q-nu2" secondAttribute="bottom" constant="20" id="n4O-YK-hD8"/>
+                        <constraint firstAttribute="trailing" secondItem="ya5-8Q-nu2" secondAttribute="trailing" constant="10" id="nQd-tf-pfP"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.40407680457746481" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Rkx-vf-edJ" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="centerX" multiplier="350:187.5" id="40D-5u-lfy"/>
+                <constraint firstItem="Rkx-vf-edJ" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="jdk-Hz-ZbU"/>
+                <constraint firstItem="Rkx-vf-edJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="centerX" multiplier="25:187.5" id="ppp-uu-heJ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-706" y="61"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon" width="48" height="48"/>
+        <image name="logo" width="100" height="100"/>
+    </resources>
+</document>
