@@ -7,6 +7,11 @@ Separate Xib is provided to customize as pr your need.
 
 Callbacks are easily handled by using Closures.
 
+# Demo Video
+
+![kcustomalert](https://user-images.githubusercontent.com/16478904/58169999-e71bf180-7caf-11e9-9163-5696a2dfcce1.gif)
+
+
 
 # Screenshots
 
