@@ -24,7 +24,9 @@ class CommonAlertVC: UIViewController {
     var descriptionMessage: String = ""
     var imageItem: UIImage?
 
-    var actionDic: [String: () -> Void]?
+    var arrayAction: [[String: () -> Void]]?
+    var okButtonAct: (() ->())?
+
     var isContactNumberHidden: Bool = true
     
     override func viewDidLoad() {
@@ -57,16 +59,17 @@ class CommonAlertVC: UIViewController {
             heightViewContainer.constant = 350
         }
 
-        if actionDic == nil {
+        if arrayAction == nil {
             buttonCancel.isHidden = true
         } else {
             var count = 0
-            for (key, _) in actionDic! {
+            for dic in arrayAction! {
                 if count > 1 {
                     return
                 }
-                let buttonTitle: String = key.uppercased()
-                if buttonTitle == "OKAY" || buttonTitle == "OK" || buttonTitle == "YES" {
+                let allKeys = Array(dic.keys)
+                let buttonTitle: String = allKeys[0].uppercased()
+                if count == 0 {
                     buttonOkay.setTitle(buttonTitle, for: .normal)
                 } else {
                     buttonCancel.setTitle(buttonTitle, for: .normal)
@@ -86,31 +89,27 @@ class CommonAlertVC: UIViewController {
     
     @IBAction func cancelButtonAction(sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
-
-        if actionDic != nil {
-            var count = 0
-            for (key, value) in actionDic! {
+        if arrayAction != nil {
+            let dic = arrayAction![1]
+            for (_, value) in dic {
                 let action: () -> Void = value
-                if key == sender.titleLabel?.text?.uppercased() {
-                    action()
-                }
-                count += 1
+                action()
             }
+        } else {
+            okButtonAct?()
         }
     }
     
     @IBAction func okayButtonAction(sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
-
-        if actionDic != nil {
-            var count = 0
-            for (key, value) in actionDic! {
+        if arrayAction != nil {
+            let dic = arrayAction![0]
+            for (_, value) in dic {
                 let action: () -> Void = value
-                if key == sender.titleLabel?.text?.uppercased() {
-                    action()
-                }
-                count += 1
+                action()
             }
+        } else {
+            okButtonAct?()
         }
     }
 

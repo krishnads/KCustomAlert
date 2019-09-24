@@ -20,7 +20,11 @@ class ViewController: UIViewController {
         
         switch btn.tag {
         case 0:
+            let actionYes: () -> Void = { (
+                print("tapped OK")
+            ) }
             self.showCustomAlertWith(
+                okButtonAction: actionYes, // This is optional
                 message: "This is a simple alert with a logo and message",
                 descMsg: "",
                 itemimage: nil,
@@ -33,17 +37,20 @@ class ViewController: UIViewController {
             self.showCustomAlertWith(message: "This is an alert with a logo, message, additional icon & description", descMsg: "your description goes here. Change font size from XiB file.", itemimage: #imageLiteral(resourceName: "icon"), actions: nil)
             
         case 3:
-            let actionDic : [String: () -> Void] = [ "YES" : { (
+            let actionYes : [String: () -> Void] = [ "YES" : { (
                     print("tapped YES")
-                ) }, "NO" : { (
-                    print("tapped NO")
-                ) }]
+            ) }]
+            let actionNo : [String: () -> Void] = [ "No" : { (
+                print("tapped NO")
+            ) }]
+            let arrayActions = [actionYes, actionNo]
+            
             
             self.showCustomAlertWith(
                 message: "This is an alert with a logo, message, additional icon, description, and 2 buttons with handlers",
                 descMsg: "your description goes here. Change font size from XiB file.",
                 itemimage: #imageLiteral(resourceName: "icon"),
-                actions: actionDic)
+                actions: arrayActions)
         default:
             print("def")
         }

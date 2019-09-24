@@ -82,7 +82,7 @@
                                                 <action selector="okayButtonActionWithSender:" destination="-1" eventType="touchUpInside" id="Hj9-Kf-l8M"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uch-SE-dhb">
+                                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uch-SE-dhb">
                                             <rect key="frame" x="150" y="0.0" width="125" height="50"/>
                                             <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="16"/>
                                             <state key="normal" title="CANCEL">

@@ -10,12 +10,13 @@ import UIKit
 
 extension UIViewController {
 
-    func showCustomAlertWith(message: String, descMsg: String, itemimage: UIImage?, actions: [String: () -> Void]?) {
+    func showCustomAlertWith(okButtonAction: (() ->())? = {}, message: String, descMsg: String, itemimage: UIImage?, actions: [[String: () -> Void]]?) {
         let alertVC = CommonAlertVC.init(nibName: "CommonAlertVC", bundle: nil)
         alertVC.message = message
-        alertVC.actionDic = actions
+        alertVC.arrayAction = actions
         alertVC.descriptionMessage = descMsg
         alertVC.imageItem = itemimage
+        alertVC.okButtonAct = okButtonAction
         //Present
         alertVC.modalTransitionStyle = .crossDissolve
         alertVC.modalPresentationStyle = .overCurrentContext
