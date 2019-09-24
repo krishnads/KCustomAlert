@@ -40,18 +40,34 @@ Let’s not use the default AlertController in our upcoming iOS Apps because it 
                 descMsg: "",
                 itemimage: nil,
                 actions: nil)
+                       
+
+# Simple one with callback action on OK button: 
+
+            let actionYes: () -> Void = { (
+                print("tapped OK")
+            ) }
+            self.showCustomAlertWith(
+                okButtonAction: actionYes, // This is optional
+                message: "This is a simple alert with a logo and message",
+                descMsg: "",
+                itemimage: nil,
+                actions: nil)
+ 
 
 # For More Content: 
 
 
-            let actionDic : [String: () -> Void] = [ "YES" : { (
+            let actionYes : [String: () -> Void] = [ "YES" : { (
                     print("tapped YES")
-                ) }, "NO" : { (
-                    print("tapped NO")
-                ) }]
+            ) }]
+            let actionNo : [String: () -> Void] = [ "No" : { (
+                print("tapped NO")
+            ) }]
+            let arrayActions = [actionYes, actionNo]
             
             self.showCustomAlertWith(
                 message: "This is an alert with a logo, message, additional icon, description, and 2 buttons with handlers",
                 descMsg: "your description goes here. Change font size from XiB file.",
                 itemimage: #imageLiteral(resourceName: "icon"),
-                actions: actionDic)
+                actions: arrayActions)
