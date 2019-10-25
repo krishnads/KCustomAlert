@@ -1,0 +1,11 @@
+framework module KAlert {
+  umbrella header "KAlert.h"
+
+  export *
+  module * { export * }
+}
+
+module KAlert.Swift {
+    header "KAlert-Swift.h"
+    requires objc
+}
