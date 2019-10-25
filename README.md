@@ -8,7 +8,9 @@ Let’s not use the default AlertController in our upcoming iOS Apps because it 
 
 # Simple and easy alerts to use instead of default AlertController.
 
-# Separate Xib is provided to customize as pr your need. 
+# Separate Xib is provided to customize as per your need. 
+
+# Integrate Framework file without writing a single line of code. 
 
 # Callbacks are easily handled by using Closures.
 
@@ -29,9 +31,20 @@ Let’s not use the default AlertController in our upcoming iOS Apps because it 
 ![Simulator Screen Shot - iPhone X - 2019-05-22 at 16 24 53](https://user-images.githubusercontent.com/16478904/58169844-6957e600-7caf-11e9-8f1b-17b8fe3621fa.png)
 
 
-# Usage -  It's simpler than anything:
+# Usage -  It's simpler than anything: You can use it in two ways
+
+# 1. Use Framework:
+
+    Simply Clone/Download the repository and drag KAlert.framework file into your project.
+    
+    import KAlert in your file where you want to use it.And That's it..!
+            
+
+# 2. Use Code:
 
 # Simply Drag and drop CustomAlert folder in your project. that's it...
+
+# Use following samples to use this simple alert
 
 # For Simple one: 
 
