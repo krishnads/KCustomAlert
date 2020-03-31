@@ -99,7 +99,7 @@ Let’s not use the default AlertController in our upcoming iOS Apps because it 
 
 ### **_Krishna Datt Shukla_**
 
-**Sr. iOS Developer
-Konstant Info Solutions Pvt. Ltd.
-Skype: krishnads03
-Email: krishnads03@gmail.com**
+**Sr. iOS Developer**
+**Konstant Info Solutions Pvt. Ltd.**
+**Skype: krishnads03**
+**Email: krishnads03@gmail.com**
