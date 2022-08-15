@@ -97,9 +97,9 @@ self.showCustomAlertWith(
 
 ### **_Krishna Datt Shukla_**
 
-**Sr. iOS Developer**
+**Application Development Specialist**
 
-**Konstant Info Solutions Pvt. Ltd.**
+**Accenture Solutions Pvt. Ltd.**
 
 **Skype: krishnads03**
 
